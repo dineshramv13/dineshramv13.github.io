@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valluri Dinesh Ram — AI/ML Engineer, Agentic Systems</title>
+<meta name="description" content="Dinesh Ram — AI/ML Engineer building agentic RAG systems, LLM pipelines and production GenAI. Portfolio, projects and contact.">
+
+<!-- ============================================================
+     FONTS — swap these <link> tags + the --font-* vars in style.css
+     if you ever want a different typeface pairing.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2242%22 fill=%22%230D1117%22 stroke=%22%232DD4BF%22 stroke-width=%228%22/><circle cx=%2250%22 cy=%2250%22 r=%2212%22 fill=%22%232DD4BF%22/></svg>">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ======================= NAV ======================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo" aria-label="Dinesh Ram — home">
+      <span class="logo-node"></span> DINESH RAM<span class="logo-dot">.</span>ai
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>About</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#concepts" data-nav>Concepts</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#contact" data-nav class="nav-cta">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+      <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg id="iconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+    </button>
+
+    <button class="nav-burger" id="navBurger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+
+      <div class="hero-copy">
+        <p class="eyebrow mono">NODE 00 · BOOT</p>
+        <h1 class="hero-title">
+          I build AI agents that don't just answer —<br>
+          they <span class="hl">verify</span>, <span class="hl">act</span>, and <span class="hl">follow through</span>.
+        </h1>
+        <p class="hero-sub">
+          Hi, I'm <strong>Dinesh Ram</strong> — an AI/ML Engineer working on agentic systems, self‑corrective
+          RAG pipelines and production GenAI, from edge devices to enterprise knowledge bases.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="/resume.pdf" class="btn btn-ghost" download>Download résumé</a>
+        </div>
+        <div class="hero-meta mono">
+          <span>Hyderabad, India</span>
+          <span class="dot-sep">·</span>
+          <span>Open to opportunities</span>
+        </div>
+      </div>
+
+      <!-- Signature element: animated agent-pipeline graph, mirrors the
+           LangGraph pipelines described in the projects below -->
+      <div class="hero-graph" aria-hidden="true">
+        <svg viewBox="0 0 420 420" class="pipeline-svg">
+          <defs>
+            <linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="var(--accent-2)" stop-opacity="0.9"/>
+            </linearGradient>
+          </defs>
+
+          <path class="edge" d="M80,70 L210,70" />
+          <path class="edge" d="M210,70 L340,140" />
+          <path class="edge" d="M340,140 L340,260" />
+          <path class="edge" d="M340,260 L210,330" />
+          <path class="edge" d="M210,330 L80,260" />
+          <path class="edge edge-retry" d="M80,260 Q40,180 80,70" />
+
+          <circle class="dot" r="4"><animateMotion dur="6s" repeatCount="indefinite"
+            path="M80,70 L210,70 L340,140 L340,260 L210,330 L80,260 Q40,180 80,70" /></circle>
+
+          <g class="node n1"><circle cx="80" cy="70" r="26"/><text x="80" y="75">IN</text></g>
+          <g class="node n2"><circle cx="210" cy="70" r="26"/><text x="210" y="75">RAG</text></g>
+          <g class="node n3"><circle cx="340" cy="140" r="26"/><text x="340" y="145">GEN</text></g>
+          <g class="node n4"><circle cx="340" cy="260" r="26"/><text x="340" y="265">CHK</text></g>
+          <g class="node n5"><circle cx="210" cy="330" r="26"/><text x="210" y="335">OK</text></g>
+          <g class="node n6"><circle cx="80" cy="260" r="26"/><text x="80" y="265">RETRY</text></g>
+        </svg>
+        <p class="graph-caption mono">a self-corrective RAG loop, roughly how it's drawn on my whiteboard</p>
+      </div>
+
+    </div>
+    <a href="#about" class="scroll-cue mono" aria-label="Scroll to content">SCROLL <span>↓</span></a>
+  </section>
+
+  <!-- ======================= ABOUT ======================= -->
+  <section class="section" id="about">
+    <p class="eyebrow mono">NODE 01 · ABOUT</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Grounding agents in things that are actually true.</h2>
+        <p>
+          I'm an AI/ML engineer who spends most of my time in the gap between "the model gave an answer"
+          and "the model gave the <em>right</em> answer." That means building retrieval pipelines that
+          fetch the right context, graph‑based agents that can check their own work, and voice/vision
+          systems that hold up outside a demo.
+        </p>
+        <p>
+          Currently I'm a <strong>Junior AI/ML &amp; Computer Vision Engineer at Tractrix Opto Dynamics</strong>,
+          where I architect self‑reflective RAG systems and optimize real‑time video pipelines for edge
+          devices mainly Embedded devices. Before that, I built LLM‑powered study tools used by
+          thousands of students, and led machine learning sessions as GDSC Lead and NLP student at IIIT Hyderabad.
+        </p>
+        <p>
+          Outside of work hours, I'm usually shipping a side project — agentic pipelines, RAG chatbots,
+          voice agents — and pushing it to <a href="https://github.com/dineshramv13" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num mono">35%</span><span class="stat-label">latency cut on an edge video inference pipeline</span></div>
+        <div class="stat"><span class="stat-num mono">1,000+</span><span class="stat-label">flashcards/hour generated by an LLM + RAG pipeline I built</span></div>
+        <div class="stat"><span class="stat-num mono">97%</span><span class="stat-label">accuracy on a CNN speaker‑recognition system</span></div>
+        <div class="stat"><span class="stat-num mono">5</span><span class="stat-label">MCP servers wired into one agent orchestration graph</span></div>
+
+        <!-- Signature-echo #2: a hub-and-spoke graph instead of the hero's
+             linear pipeline — same visual language, different shape -->
+        <div class="about-hub" data-reveal>
+          <svg viewBox="0 0 300 260" class="hub-svg">
+            <path class="hub-edge" d="M150,130 L150,40"/>
+            <path class="hub-edge" d="M150,130 L250,90"/>
+            <path class="hub-edge" d="M150,130 L250,190"/>
+            <path class="hub-edge" d="M150,130 L50,190"/>
+            <path class="hub-edge" d="M150,130 L50,90"/>
+            <circle class="hub-orbit-dot" r="3.2"><animateMotion dur="7s" repeatCount="indefinite"
+              path="M150,130 L150,40 M150,130 L250,90 M150,130 L250,190 M150,130 L50,190 M150,130 L50,90"/></circle>
+
+            <g class="hub-node h1"><circle cx="150" cy="40" r="30"/><text x="150" y="44">Agentic AI</text></g>
+            <g class="hub-node h2"><circle cx="250" cy="90" r="22"/><text x="250" y="94">RAG</text></g>
+            <g class="hub-node h3"><circle cx="250" cy="190" r="22"/><text x="250" y="194">MLOps</text></g>
+            <g class="hub-node h4"><circle cx="50" cy="190" r="22"/><text x="50" y="194">Vision</text></g>
+            <g class="hub-node h4" style="animation-delay:5s"><circle cx="50" cy="90" r="22"/><text x="50" y="94">Voice</text></g>
+            <g class="hub-core"><circle cx="150" cy="130" r="30"/><text x="150" y="135">ME</text></g>
+          </svg>
+          <p class="graph-caption mono">what I actually spend my week on</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= EXPERIENCE ======================= -->
+  <section class="section" id="experience">
+    <p class="eyebrow mono">NODE 02 · EXPERIENCE</p>
+    <h2 class="section-title">Where I've worked</h2>
+    <div class="timeline" id="timelineList"><!-- injected by script.js from data.js --></div>
+  </section>
+
+  <!-- ======================= PROJECTS ======================= -->
+  <section class="section" id="projects">
+    <p class="eyebrow mono">NODE 03 · PROJECTS</p>
+    <h2 class="section-title">Things I've built</h2>
+    <p class="section-sub">A few systems I designed end-to-end — architecture, retrieval, evaluation, and the plumbing in between.</p>
+    <div class="project-grid" id="projectGrid"><!-- injected by script.js from data.js --></div>
+  </section>
+
+  <!-- ======================= CONCEPTS ======================= -->
+  <section class="section" id="concepts">
+    <p class="eyebrow mono">NODE 04 · HOW I THINK ABOUT THIS</p>
+    <h2 class="section-title">Four ideas behind most of my work</h2>
+    <p class="section-sub">The projects above are all built from the same handful of underlying patterns. Here's what each one actually means in practice.</p>
+
+    <div class="concepts-grid">
+
+      <article class="concept-card" data-accent="rag" data-reveal>
+        <div class="concept-head">
+          <span class="concept-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          </span>
+          <div>
+            <div class="concept-title">RAG</div>
+            <div class="concept-tagline">Retrieval-Augmented Generation</div>
+          </div>
+        </div>
+        <svg viewBox="0 0 300 90" class="concept-diagram">
+          <path class="cd-line-live" d="M20,45 L90,45"/>
+          <path class="cd-line-live" d="M90,45 L165,45"/>
+          <path class="cd-line-live" d="M165,45 L235,45"/>
+          <path class="cd-line" d="M235,45 Q280,45 280,20 Q280,10 260,10 Q160,10 90,32" stroke-dasharray="4 5"/>
+          <circle class="cd-dot" r="3.5"><animateMotion dur="4.5s" repeatCount="indefinite" path="M20,45 L90,45 L165,45 L235,45 Q280,45 280,20 Q280,10 260,10 Q160,10 90,32 L20,45"/></circle>
+          <g class="node"><circle class="cd-node active" cx="20" cy="45" r="16"/><text x="20" y="70">query</text></g>
+          <g class="node"><circle class="cd-node active" cx="90" cy="45" r="16"/><text x="90" y="70">retrieve</text></g>
+          <g class="node"><circle class="cd-node active" cx="165" cy="45" r="16"/><text x="165" y="70">rerank</text></g>
+          <g class="node"><circle class="cd-node active" cx="235" cy="45" r="16"/><text x="235" y="70">generate</text></g>
+        </svg>
+        <p class="concept-desc">Instead of asking a model to answer from memory, I fetch the actual relevant documents first — hybrid keyword + vector search, reranked with a cross-encoder — so the answer is grounded in something real, with a dashed retry line back to retrieval when the answer isn't well supported.</p>
+        <div class="concept-tags">
+          <span class="tag">Hybrid Retrieval</span><span class="tag">Reranking</span><span class="tag">Grounding</span>
+        </div>
+      </article>
+
+      <article class="concept-card" data-accent="agentic" data-reveal>
+        <div class="concept-head">
+          <span class="concept-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v6M12 13l-6 4M12 13l6 4"/></svg>
+          </span>
+          <div>
+            <div class="concept-title">Agentic Workflows</div>
+            <div class="concept-tagline">Routing, not one giant prompt</div>
+          </div>
+        </div>
+        <svg viewBox="0 0 300 100" class="concept-diagram">
+          <path class="cd-line-live" d="M30,50 L100,50"/>
+          <path class="cd-line-live" d="M100,50 L190,20"/>
+          <path class="cd-line-live" d="M100,50 L190,50"/>
+          <path class="cd-line-live" d="M100,50 L190,80"/>
+          <path class="cd-line-live" d="M190,20 L260,50"/>
+          <path class="cd-line-live" d="M190,50 L260,50"/>
+          <path class="cd-line-live" d="M190,80 L260,50"/>
+          <circle class="cd-dot" r="3.5"><animateMotion dur="4.5s" repeatCount="indefinite" path="M30,50 L100,50 L190,50 L260,50"/></circle>
+          <g class="node"><circle class="cd-node active" cx="30" cy="50" r="14"/><text x="30" y="72">in</text></g>
+          <g class="node"><circle class="cd-node active" cx="100" cy="50" r="14"/><text x="100" y="72">router</text></g>
+          <g class="node"><circle class="cd-node" cx="190" cy="20" r="12"/><text x="190" y="8">worker</text></g>
+          <g class="node"><circle class="cd-node" cx="190" cy="50" r="12"/><text x="220" y="60">worker</text></g>
+          <g class="node"><circle class="cd-node" cx="190" cy="80" r="12"/><text x="190" y="98">worker</text></g>
+          <g class="node"><circle class="cd-node active" cx="260" cy="50" r="14"/><text x="260" y="72">reduce</text></g>
+        </svg>
+        <p class="concept-desc">A router classifies the task and fans it out to specialized worker agents running in parallel — research, extraction, drafting — then a reducer merges their output into one result. It's slower to design than a single prompt, and far more reliable in production.</p>
+        <div class="concept-tags">
+          <span class="tag">LangGraph</span><span class="tag">Parallel Workers</span><span class="tag">Human-in-the-Loop</span>
+        </div>
+      </article>
+
+      <article class="concept-card" data-accent="deploy" data-reveal>
+        <div class="concept-head">
+          <span class="concept-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          </span>
+          <div>
+            <div class="concept-title">Deployment</div>
+            <div class="concept-tagline">From notebook to something that stays up</div>
+          </div>
+        </div>
+        <svg viewBox="0 0 300 90" class="concept-diagram">
+          <path class="cd-line-live" d="M20,45 L95,45"/>
+          <path class="cd-line-live" d="M95,45 L175,45"/>
+          <path class="cd-line-live" d="M175,45 L255,45"/>
+          <circle class="cd-dot" r="3.5"><animateMotion dur="4.5s" repeatCount="indefinite" path="M20,45 L95,45 L175,45 L255,45"/></circle>
+          <g class="node"><circle class="cd-node active" cx="20" cy="45" r="16"/><text x="20" y="70">code</text></g>
+          <g class="node"><circle class="cd-node active" cx="95" cy="45" r="16"/><text x="95" y="70">docker</text></g>
+          <g class="node"><circle class="cd-node active" cx="175" cy="45" r="16"/><text x="175" y="70">CI/CD</text></g>
+          <g class="node"><circle class="cd-node active" cx="255" cy="45" r="16"/><text x="255" y="70">EC2 / edge</text></g>
+        </svg>
+        <p class="concept-desc">A model that only runs in a notebook isn't shippable. I containerize with Docker, wire up GitHub Actions for auto-deploy, and have taken the same discipline down to edge hardware — Edge AI devices — where compute and power are both tight.</p>
+        <div class="concept-tags">
+          <span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">AWS EC2</span><span class="tag">Edge</span>
+        </div>
+      </article>
+
+      <article class="concept-card" data-accent="multimodal" data-reveal>
+        <div class="concept-head">
+          <span class="concept-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>
+          </span>
+          <div>
+            <div class="concept-title">Multimodal Systems</div>
+            <div class="concept-tagline">Text, voice, and video in one pipeline</div>
+          </div>
+        </div>
+        <svg viewBox="0 0 300 100" class="concept-diagram">
+          <path class="cd-line-live" d="M30,20 L140,50"/>
+          <path class="cd-line-live" d="M30,50 L140,50"/>
+          <path class="cd-line-live" d="M30,80 L140,50"/>
+          <path class="cd-line-live" d="M140,50 L260,50"/>
+          <circle class="cd-dot" r="3.5"><animateMotion dur="4.5s" repeatCount="indefinite" path="M30,50 L140,50 L260,50"/></circle>
+          <g class="node"><circle class="cd-node active" cx="30" cy="20" r="13"/><text x="50" y="8">voice</text></g>
+          <g class="node"><circle class="cd-node active" cx="30" cy="50" r="13"/><text x="55" y="60">text</text></g>
+          <g class="node"><circle class="cd-node active" cx="30" cy="80" r="13"/><text x="50" y="98">video</text></g>
+          <g class="node"><circle class="cd-node active" cx="140" cy="50" r="16"/><text x="140" y="72">agent</text></g>
+          <g class="node"><circle class="cd-node active" cx="260" cy="50" r="16"/><text x="260" y="72">response</text></g>
+        </svg>
+        <p class="concept-desc">Real users don't type structured queries — they speak, upload PDFs, or point a camera. I've built Whisper-based STT into agent graphs, run inference on live camera feeds, and kept text, voice, and vision behind the same underlying pipeline so adding a modality doesn't mean rebuilding the system.</p>
+        <div class="concept-tags">
+          <span class="tag">Whisper STT</span><span class="tag">OpenCV</span><span class="tag">TTS</span><span class="tag">Unified Pipeline</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ======================= SKILLS ======================= -->
+  <section class="section" id="skills">
+    <p class="eyebrow mono">NODE 05 · SKILLS</p>
+    <h2 class="section-title">Toolbox</h2>
+    <div class="skills-grid" id="skillsGrid"><!-- injected by script.js from data.js --></div>
+  </section>
+
+  <!-- ======================= ACHIEVEMENTS ======================= -->
+  <section class="section" id="achievements">
+    <p class="eyebrow mono">NODE 06 · LOG</p>
+    <h2 class="section-title">Achievements &amp; education</h2>
+    <div class="achv-grid" id="achvGrid"><!-- injected by script.js from data.js --></div>
+  </section>
+
+  <!-- ======================= CONTACT ======================= -->
+  <section class="section contact-section" id="contact">
+    <p class="eyebrow mono">NODE 07 · OUTPUT</p>
+    <h2 class="section-title">Let's build something.</h2>
+    <p class="section-sub">
+      Hiring, collaborating, or just want to talk about agent architectures — my inbox is open.
+    </p>
+
+    <div class="contact-flow" data-reveal>
+      <svg viewBox="0 0 300 70" class="contact-flow-svg">
+        <path class="cf-line" d="M40,35 L260,35"/>
+        <circle class="cf-dot" r="4"><animateMotion dur="3s" repeatCount="indefinite" path="M40,35 L260,35"/></circle>
+        <g class="cf-node you"><circle cx="40" cy="35" r="24"/><text x="40" y="40">you</text></g>
+        <g class="cf-node me"><circle cx="260" cy="35" r="24"/><text x="260" y="40">ME</text></g>
+      </svg>
+    </div>
+
+    <div class="contact-actions">
+      <a href="mailto:dineshramv13@gmail.com" class="btn btn-primary btn-lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+        dineshramv13@gmail.com
+      </a>
+    </div>
+
+    <div class="contact-links">
+      <a href="https://github.com/dineshramv13" target="_blank" rel="noopener" class="contact-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        GitHub
+      </a>
+      <a href="https://linkedin.com/in/dineshramv" target="_blank" rel="noopener" class="contact-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.25h4.5V23H.24V8.25zM8.5 8.25h4.31v2.02h.06c.6-1.13 2.07-2.33 4.26-2.33 4.55 0 5.39 3 5.39 6.9V23h-4.5v-6.28c0-1.5-.03-3.42-2.08-3.42-2.09 0-2.41 1.63-2.41 3.32V23H8.5V8.25z"/></svg>
+        LinkedIn
+      </a>
+      <a href="mailto:dineshramv13@gmail.com" class="contact-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        Email
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">Built by Dinesh Ram</p>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑ top</button>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -67,7 +67,7 @@ const PROJECTS = [
     links: { github: "https://github.com/dineshramv13/MeetingMind-AI-Powered-Meeting-Orchestration-Agent", demo: null }
   },
   {
-    title: "EMMA — Local Healthcare Voice Reception Agent",
+    title: "Agentic Healthcare Voice Assistant Agent",
     subtitle: "Voice-first agentic RAG, fully local",
     description:
       "A stateful LangGraph voice agent for healthcare reception — safety check → intent classification → conditional routing → hybrid RAG retrieval → generation → grounding verification — mirroring how production clinical voice AI is designed, with hardcoded, zero-LLM emergency handling for safety.",
@@ -78,7 +78,7 @@ const PROJECTS = [
       "RAGAS-style evaluation harness across a 50-query golden set: faithfulness, relevance, context precision, emergency recall, P95 latency, A/B prompt comparisons"
     ],
     tags: ["LangGraph", "RAG", "Whisper", "ChromaDB", "FastAPI", "RAGAS", "Safety Guardrails"],
-    links: { github: null, demo: null }
+    links: { github: "https://github.com/dineshramv13/Agentic_Healthcare_Voice_Assistant", demo: null }
   },
   {
     title: "Advanced Multi-Agent Blog Writer",

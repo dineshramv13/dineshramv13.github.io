@@ -68,7 +68,7 @@ const PROJECTS = [
   },
   {
     title: "Agentic Healthcare Voice Assistant Agent",
-    subtitle: "Voice-first agentic RAG, fully local",
+    subtitle: "Voice first agentic RAG, fully Autonomus",
     description:
       "A stateful LangGraph voice agent for healthcare reception — safety check → intent classification → conditional routing → hybrid RAG retrieval → generation → grounding verification — mirroring how production clinical voice AI is designed, with hardcoded, zero-LLM emergency handling for safety.",
     highlights: [
